@@ -57,6 +57,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 
 Plugin 'haya14busa/incsearch.vim'
+Plugin 'Raimondi/delimitMate'
 
 
 
@@ -88,7 +89,9 @@ filetype plugin indent on    " required
 
 "   <-   Custom Settings
 
-colorscheme molokai
+" colorscheme molokai
+colorscheme atom
+" colorscheme Benokai
 
 " Encoding
 " scriptencoding utf-8
@@ -112,7 +115,7 @@ set autoindent
 
 syntax on
 set wildmenu
-set colorcolumn=113
+set colorcolumn=140
 set ruler
 " set visualbell 
 " set t_vb=
@@ -137,8 +140,8 @@ set list
 " Map previous/next tab to F7/F8 
 " map <F8> <ESC>:tabp<CR>
 " map <F9> <ESC>:tabn<CR>
-map <F8> <ESC>:tabp<CR>
-map <F9> <ESC>:tabn<CR>
+map <D-u> <ESC>:tabp<CR>
+map <D-i> <ESC>:tabn<CR>
 
 " Map Esc
 imap <D-j> <Esc>
@@ -167,7 +170,7 @@ vno <up> <Nop>
 
 iabbr ture true
 iabbr flase false
-iabbr FN function
+iabbr fn function
 
 "quick pairs
 " imap <leader>' ''<ESC>i
@@ -187,11 +190,14 @@ imap <C-k> <esc>lDa
 imap <C-b> <esc>i
 imap <C-f> <esc>la
 imap <C-d> <Del>
-imap <C-u> <esc>ddo
+" imap <C-u> <esc>ddo
+imap <C-u> <esc>S
 
 imap <C-p> <esc>ka
 imap <C-n> <esc>ja
 
 " imap <D-N> <esc>:NERDTree<CR>
+
+" imap <S-CR> <CR><CR><C-o>k<Tab>
 
 " /Mapping
